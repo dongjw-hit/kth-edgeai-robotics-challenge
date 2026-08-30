@@ -1,135 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>KTH Edge AI Robotics Challenge</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>KTH EdgeAI Cooperative Robotics Challenge</title>
+
+    <meta name="description"
+          content="KTH EdgeAI Cooperative Robotics Challenge - a student challenge on cooperative robotics, edge AI, communication, control, and human-robot interaction.">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
 
-    <!-- =========================
-         Navigation
-    ========================== -->
-    <header class="site-header">
-        <div class="nav-container">
 
-            <a href="index.html" class="brand">
-                <span class="brand-main">KTH</span>
-                <span class="brand-sub">Edge AI Robotics Challenge</span>
+<!-- =========================================================
+     Header / Navigation
+========================================================= -->
+
+<header class="site-header">
+
+    <div class="nav-container">
+
+        <a href="index.html" class="brand">
+
+            <span class="brand-main">
+                KTH
+            </span>
+
+            <span class="brand-sub">
+                EdgeAI Cooperative<br>
+                Robotics Challenge
+            </span>
+
+        </a>
+
+
+        <nav class="main-nav">
+
+            <a href="index.html"
+               class="active">
+                Home
             </a>
 
-            <nav class="main-nav">
-                <a href="index.html" class="active">Home</a>
-                <a href="participation.html">Participation</a>
-                <a href="resources.html">Resources</a>
-                <a href="apply.html" class="apply-button">Apply</a>
-            </nav>
+            <a href="participation.html">
+                Participation
+            </a>
 
-        </div>
-    </header>
+            <a href="resources.html">
+                Resources
+            </a>
 
+            <a href="apply.html"
+               class="apply-button">
+                Apply
+            </a>
 
-    <!-- =========================
-         Hero
-    ========================== -->
-    <section class="hero">
+        </nav>
 
-        <div class="hero-overlay"></div>
+    </div>
 
-        <div class="hero-container">
-
-            <div class="hero-content">
-
-                <p class="hero-kicker">
-                    KTH ROYAL INSTITUTE OF TECHNOLOGY
-                </p>
-
-                <h1>
-                    Edge AI<br>
-                    Robotics Challenge
-                </h1>
-
-                <p class="hero-description">
-                    Build intelligent multi-robot systems through edge computing,
-                    communication, autonomous coordination, and human–AI interaction.
-                </p>
-
-                <a href="#challenge" class="hero-button">
-                    Explore the Challenge
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
+</header>
 
 
-    <!-- =========================
-         Main Content
-    ========================== -->
-    <main>
 
-        <section class="content-section" id="challenge">
+<!-- =========================================================
+     Hero
+========================================================= -->
 
-            <div class="content-grid">
+<section class="hero">
 
-                <!-- LEFT COLUMN -->
-                <div class="main-column">
+    <div class="hero-overlay"></div>
 
-                    <!-- About -->
-                    <section class="about-section">
+    <div class="hero-container">
 
-    <p class="section-label">
-        THE CHALLENGE
-    </p>
+        <div class="hero-content">
 
-    <div class="challenge-layout">
-
-        <!-- LEFT: text -->
-        <div class="challenge-text">
-
-            <p class="challenge-overview">
-                Each team will control a group of approximately
-                <strong>four wheeled mobile robots</strong>
-                operating in an unknown indoor environment.
-                During the mission, the robots may need to:
+            <p class="hero-kicker">
+                KTH ROYAL INSTITUTE OF TECHNOLOGY
             </p>
 
-            <ul class="challenge-list">
-                <li>Explore an initially unknown environment</li>
-                <li>Detect and identify different targets</li>
-                <li>Share information between robots</li>
-                <li>Allocate tasks among robots</li>
-                <li>Form robot groups to complete specific rescue tasks</li>
-                <li>Adapt their behavior according to mission updates</li>
-                <li>Manage computation, communication, and energy consumption</li>
-            </ul>
+            <h1>
+                EdgeAI Cooperative<br>
+                Robotics Challenge
+            </h1>
 
-            <p class="challenge-note">
-                Some targets may require multiple robots to arrive at the target
-                simultaneously before the rescue task is considered completed.
+            <p class="hero-description">
+                Explore the future of cooperative robotics through
+                edge intelligence, communication, autonomous coordination,
+                and human–AI interaction.
             </p>
 
-        </div>
-
-
-        <!-- RIGHT: image -->
-        <div class="challenge-image-block">
-
-            <img
-                src="images/challenge-scenario.png"
-                alt="Indoor multi-robot exploration scenario"
-                class="challenge-image"
-            >
-
-            <p class="image-caption">
-                Arena target: about 15 × 10 m indoor exploration area
-            </p>
+            <a href="#challenge"
+               class="hero-button">
+                Explore the Challenge
+            </a>
 
         </div>
 
@@ -138,264 +108,455 @@
 </section>
 
 
-                    <!-- Architecture -->
-                    <section class="architecture-section">
 
-                        <div class="section-heading-row">
+<!-- =========================================================
+     Main
+========================================================= -->
 
-                            <div>
-                                <p class="section-label">
-                                    TECHNICAL ARCHITECTURE
-                                </p>
+<main>
 
-                                <h2>
-                                    From human intent<br>
-                                    to robot coordination.
-                                </h2>
-                            </div>
+
+    <!-- =====================================================
+         Main content + Latest News
+    ====================================================== -->
+
+    <section class="content-section"
+             id="challenge">
+
+        <div class="content-grid">
+
+
+            <!-- =================================================
+                 LEFT MAIN COLUMN
+            ================================================== -->
+
+            <div class="main-column">
+
+
+                <!-- =============================================
+                     Challenge
+                ============================================== -->
+
+                <section class="challenge-section">
+
+                    <p class="section-label">
+                        THE CHALLENGE
+                    </p>
+
+
+                    <div class="challenge-layout">
+
+
+                        <!-- LEFT TEXT -->
+
+                        <div class="challenge-text">
+
+                            <p class="challenge-overview">
+
+                                Each team will control a group of approximately
+                                <strong>four wheeled mobile robots</strong>
+                                operating in an unknown indoor environment.
+
+                                During the mission, the robots may need to:
+
+                            </p>
+
+
+                            <ul class="challenge-list">
+
+                                <li>
+                                    Explore an initially unknown environment
+                                </li>
+
+                                <li>
+                                    Detect and identify different targets
+                                </li>
+
+                                <li>
+                                    Share information between robots
+                                </li>
+
+                                <li>
+                                    Allocate tasks among robots
+                                </li>
+
+                                <li>
+                                    Form robot groups to complete specific rescue tasks
+                                </li>
+
+                                <li>
+                                    Adapt their behavior according to mission updates
+                                </li>
+
+                                <li>
+                                    Manage computation, communication,
+                                    and energy consumption
+                                </li>
+
+                            </ul>
+
+
+                            <p class="challenge-note">
+
+                                Some targets may require multiple robots
+                                to arrive at the target simultaneously
+                                before the rescue task is considered completed.
+
+                            </p>
 
                         </div>
 
-                        <p class="architecture-intro">
-                            Each team operates a fleet of mobile robots connected
-                            through a shared communication and edge-computing
-                            infrastructure. The edge node supports computationally
-                            intensive tasks and coordination, while a human operator
-                            can provide high-level mission updates through an
-                            LLM-based interface.
-                        </p>
 
-                        <div class="architecture-image-wrapper">
+                        <!-- RIGHT IMAGE -->
+
+                        <div class="challenge-image-block">
+
                             <img
-                                src="images/architecture.png"
-                                alt="Technical architecture of the KTH Edge AI Robotics Challenge"
-                                class="architecture-image"
+                                src="images/challenge-scenario.png"
+                                alt="Indoor multi-robot exploration challenge scenario"
+                                class="challenge-image"
                             >
+
+                            <p class="image-caption">
+                                Arena target: about 15 × 10 m indoor exploration area
+                            </p>
+
                         </div>
 
-                    </section>
 
-                </div>
-
-
-                <!-- RIGHT COLUMN -->
-                <aside class="news-column">
-
-                    <div class="news-header">
-                        <p class="section-label">
-                            UPDATES
-                        </p>
-
-                        <h2>
-                            Latest News
-                        </h2>
                     </div>
 
-
-                    <article class="news-item">
-                        <p class="news-date">
-                            AUGUST 2026
-                        </p>
-
-                        <h3>
-                            Challenge website launched
-                        </h3>
-
-                        <p>
-                            The first version of the KTH Edge AI Robotics Challenge
-                            website is now online.
-                        </p>
-                    </article>
+                </section>
 
 
-                    <article class="news-item">
-                        <p class="news-date">
-                            AUGUST 2026
-                        </p>
 
-                        <h3>
-                            Technical platform defined
-                        </h3>
+                <!-- =============================================
+                     Technical Architecture
+                ============================================== -->
 
-                        <p>
-                            The initial competition framework, robot platform,
-                            edge-computing resources, and team structure have
-                            been defined.
-                        </p>
-                    </article>
+                <section class="architecture-section">
+
+                    <p class="section-label">
+                        TECHNICAL ARCHITECTURE
+                    </p>
+
+                    <h2 class="architecture-title">
+                        Edge intelligence for cooperative robots
+                    </h2>
 
 
-                    <article class="news-item">
-                        <p class="news-date">
-                            SEPTEMBER 2026
-                        </p>
+                    <p class="architecture-intro">
 
-                        <h3>
-                            Student recruitment coming soon
-                        </h3>
+                        Each team operates a fleet of mobile robots
+                        connected through a shared communication and
+                        edge-computing infrastructure.
 
-                        <p>
-                            Information about participation, team formation,
-                            and registration will be released soon.
-                        </p>
-                    </article>
+                        The edge node can support computationally intensive
+                        tasks, global information processing, and multi-robot
+                        coordination, while a human operator can provide
+                        high-level mission updates through an LLM-based interface.
 
-                </aside>
+                    </p>
+
+
+                    <div class="architecture-image-wrapper">
+
+                        <img
+                            src="images/architecture.png"
+                            alt="Technical architecture of the KTH EdgeAI Cooperative Robotics Challenge"
+                            class="architecture-image"
+                        >
+
+                    </div>
+
+                </section>
+
 
             </div>
 
-        </section>
 
 
-        <!-- =========================
-             Timeline
-        ========================== -->
-        <section class="timeline-section">
+            <!-- =================================================
+                 RIGHT NEWS COLUMN
+            ================================================== -->
 
-            <div class="timeline-container">
+            <aside class="news-column">
 
-                <div class="timeline-heading">
+
+                <div class="news-header">
 
                     <p class="section-label">
-                        2026 CHALLENGE
+                        UPDATES
                     </p>
 
                     <h2>
-                        Timeline
+                        Latest News
                     </h2>
 
+                </div>
+
+
+
+                <article class="news-item">
+
+                    <p class="news-date">
+                        AUGUST 2026
+                    </p>
+
+                    <h3>
+                        Challenge website launched
+                    </h3>
+
                     <p>
-                        From student recruitment to the final competition.
+                        The first version of the KTH EdgeAI Cooperative
+                        Robotics Challenge website is now online.
+                    </p>
+
+                </article>
+
+
+
+                <article class="news-item">
+
+                    <p class="news-date">
+                        AUGUST 2026
+                    </p>
+
+                    <h3>
+                        Technical platform defined
+                    </h3>
+
+                    <p>
+                        The initial competition framework, robot platform,
+                        edge-computing resources, and team structure have
+                        been defined.
+                    </p>
+
+                </article>
+
+
+
+                <article class="news-item">
+
+                    <p class="news-date">
+                        SEPTEMBER 2026
+                    </p>
+
+                    <h3>
+                        Student recruitment coming soon
+                    </h3>
+
+                    <p>
+                        Information about participation, team formation,
+                        and registration will be released soon.
+                    </p>
+
+                </article>
+
+
+            </aside>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         Timeline
+    ====================================================== -->
+
+    <section class="timeline-section">
+
+        <div class="timeline-container">
+
+
+            <div class="timeline-heading">
+
+                <p class="section-label">
+                    2026 CHALLENGE
+                </p>
+
+                <h2>
+                    Timeline
+                </h2>
+
+                <p>
+                    From preparation and student recruitment
+                    to the final competition.
+                </p>
+
+            </div>
+
+
+
+            <div class="timeline">
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <p class="timeline-month">
+                        AUG
+                    </p>
+
+                    <h3>
+                        Preparation
+                    </h3>
+
+                    <p>
+                        Challenge design, platform preparation,
+                        rules, and communication materials.
                     </p>
 
                 </div>
 
 
-                <div class="timeline">
 
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
+                <div class="timeline-item">
 
-                        <p class="timeline-month">
-                            AUG
-                        </p>
+                    <div class="timeline-dot"></div>
 
-                        <h3>
-                            Preparation
-                        </h3>
+                    <p class="timeline-month">
+                        SEP
+                    </p>
 
-                        <p>
-                            Challenge design, platform setup and communication materials.
-                        </p>
-                    </div>
+                    <h3>
+                        Recruitment
+                    </h3>
 
-
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-
-                        <p class="timeline-month">
-                            SEP
-                        </p>
-
-                        <h3>
-                            Recruitment
-                        </h3>
-
-                        <p>
-                            Student applications, team formation and selection.
-                        </p>
-                    </div>
-
-
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-
-                        <p class="timeline-month">
-                            OCT
-                        </p>
-
-                        <h3>
-                            Kick-off
-                        </h3>
-
-                        <p>
-                            Teams receive the challenge, platform and competition rules.
-                        </p>
-                    </div>
-
-
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-
-                        <p class="timeline-month">
-                            OCT–NOV
-                        </p>
-
-                        <h3>
-                            Development
-                        </h3>
-
-                        <p>
-                            System development, testing and preparation with mentor support.
-                        </p>
-                    </div>
-
-
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-
-                        <p class="timeline-month">
-                            DEC
-                        </p>
-
-                        <h3>
-                            Final Challenge
-                        </h3>
-
-                        <p>
-                            One-day competition and final evaluation.
-                        </p>
-                    </div>
+                    <p>
+                        Student applications, team formation,
+                        and participant selection.
+                    </p>
 
                 </div>
 
-            </div>
-
-        </section>
-
-    </main>
 
 
-    <!-- =========================
-         Footer
-    ========================== -->
-    <footer class="site-footer">
+                <div class="timeline-item">
 
-        <div class="footer-container">
+                    <div class="timeline-dot"></div>
 
-            <div>
-                <h3>
-                    KTH Edge AI Robotics Challenge
-                </h3>
+                    <p class="timeline-month">
+                        OCT
+                    </p>
 
-                <p>
-                    KTH Royal Institute of Technology
-                </p>
-            </div>
+                    <h3>
+                        Kick-off
+                    </h3>
 
-            <div class="footer-links">
-                <a href="index.html">Home</a>
-                <a href="participation.html">Participation</a>
-                <a href="resources.html">Resources</a>
+                    <p>
+                        Teams receive the challenge description,
+                        platform, and detailed competition rules.
+                    </p>
+
+                </div>
+
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <p class="timeline-month">
+                        OCT–NOV
+                    </p>
+
+                    <h3>
+                        Development
+                    </h3>
+
+                    <p>
+                        System development, testing,
+                        simulation, and preparation.
+                    </p>
+
+                </div>
+
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <p class="timeline-month">
+                        DEC
+                    </p>
+
+                    <h3>
+                        Final Challenge
+                    </h3>
+
+                    <p>
+                        One-day competition and final evaluation.
+                    </p>
+
+                </div>
+
+
             </div>
 
         </div>
 
-        <div class="footer-bottom">
-            © 2026 KTH Edge AI Robotics Challenge
+    </section>
+
+
+</main>
+
+
+
+<!-- =========================================================
+     Footer
+========================================================= -->
+
+<footer class="site-footer">
+
+    <div class="footer-container">
+
+
+        <div class="footer-brand">
+
+            <h3>
+                KTH EdgeAI Cooperative Robotics Challenge
+            </h3>
+
+            <p>
+                KTH Royal Institute of Technology
+            </p>
+
         </div>
 
-    </footer>
+
+        <div class="footer-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="participation.html">
+                Participation
+            </a>
+
+            <a href="resources.html">
+                Resources
+            </a>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="footer-bottom">
+        © 2026 KTH EdgeAI Cooperative Robotics Challenge
+    </div>
+
+</footer>
+
 
 </body>
+
 </html>

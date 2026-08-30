@@ -240,84 +240,82 @@
         TECHNICAL ARCHITECTURE
     </p>
 
-    <div class="architecture-layout">
+    <div class="architecture-grid">
 
-        <!-- LEFT: architecture description -->
-        <div class="architecture-cards">
+        <!-- 1. Mobile robot team -->
+        <div class="architecture-card">
 
-            <div class="architecture-card">
+            <h3>
+                1. Mobile robot team
+            </h3>
 
-                <h3>
-                    1. Mobile robot team
-                </h3>
+            <ul>
+                <li>
+                    Robots perform sensing, local computation,
+                    motion control, and exploration.
+                </li>
 
-                <ul>
-                    <li>
-                        Robots perform sensing, local computation,
-                        motion control, and exploration.
-                    </li>
-
-                    <li>
-                        Robots can communicate and share local
-                        information with each other.
-                    </li>
-                </ul>
-
-            </div>
-
-
-            <div class="architecture-card">
-
-                <h3>
-                    2. Edge computing node
-                </h3>
-
-                <ul>
-                    <li>
-                        A single local computing server is available
-                        to each team.
-                    </li>
-
-                    <li>
-                        Teams decide which tasks are executed onboard
-                        and which are offloaded to the edge.
-                    </li>
-
-                    <li>
-                        Typical edge functions may include multi-robot
-                        coordination, perception, map fusion,
-                        task allocation, and LLM inference.
-                    </li>
-                </ul>
-
-            </div>
-
-
-            <div class="architecture-card">
-
-                <h3>
-                    3. Human operator + LLM
-                </h3>
-
-                <ul>
-                    <li>
-                        The human operator provides natural-language
-                        mission updates.
-                    </li>
-
-                    <li>
-                        The LLM interprets the instructions and converts
-                        them into executable tasks for the robot team.
-                    </li>
-                </ul>
-
-            </div>
+                <li>
+                    Robots can communicate and share local
+                    information with each other.
+                </li>
+            </ul>
 
         </div>
 
 
-        <!-- RIGHT: architecture image -->
-        <div class="architecture-image-wrapper">
+        <!-- 2. Edge computing node -->
+        <div class="architecture-card">
+
+            <h3>
+                2. Edge computing node
+            </h3>
+
+            <ul>
+                <li>
+                    A single local computing server is available
+                    to each team.
+                </li>
+
+                <li>
+                    Teams decide which tasks are executed onboard
+                    and which are offloaded to the edge.
+                </li>
+
+                <li>
+                    Typical edge functions may include multi-robot
+                    coordination, perception, map fusion,
+                    task allocation, and LLM inference.
+                </li>
+            </ul>
+
+        </div>
+
+
+        <!-- 3. Human operator + LLM -->
+        <div class="architecture-card">
+
+            <h3>
+                3. Human operator + LLM
+            </h3>
+
+            <ul>
+                <li>
+                    The human operator provides natural-language
+                    mission updates.
+                </li>
+
+                <li>
+                    The LLM interprets the instructions and converts
+                    them into executable tasks for the robot team.
+                </li>
+            </ul>
+
+        </div>
+
+
+        <!-- Architecture figure -->
+        <div class="architecture-figure">
 
             <img
                 src="images/architecture.png"
@@ -330,7 +328,6 @@
     </div>
 
 </section>
-
 
             </div>
 

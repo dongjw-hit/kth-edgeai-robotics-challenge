@@ -234,42 +234,102 @@
                      Technical Architecture
                 ============================================== -->
 
-                <section class="architecture-section">
+<section class="architecture-section">
 
-                    <p class="section-label">
-                        TECHNICAL ARCHITECTURE
-                    </p>
+    <p class="section-label">
+        TECHNICAL ARCHITECTURE
+    </p>
 
-                    <h2 class="architecture-title">
-                        Edge intelligence for cooperative robots
-                    </h2>
+    <div class="architecture-layout">
+
+        <!-- LEFT: architecture description -->
+        <div class="architecture-cards">
+
+            <div class="architecture-card">
+
+                <h3>
+                    1. Mobile robot team
+                </h3>
+
+                <ul>
+                    <li>
+                        Robots perform sensing, local computation,
+                        motion control, and exploration.
+                    </li>
+
+                    <li>
+                        Robots can communicate and share local
+                        information with each other.
+                    </li>
+                </ul>
+
+            </div>
 
 
-                    <p class="architecture-intro">
+            <div class="architecture-card">
 
-                        Each team operates a fleet of mobile robots
-                        connected through a shared communication and
-                        edge-computing infrastructure.
+                <h3>
+                    2. Edge computing node
+                </h3>
 
-                        The edge node can support computationally intensive
-                        tasks, global information processing, and multi-robot
-                        coordination, while a human operator can provide
-                        high-level mission updates through an LLM-based interface.
+                <ul>
+                    <li>
+                        A single local computing server is available
+                        to each team.
+                    </li>
 
-                    </p>
+                    <li>
+                        Teams decide which tasks are executed onboard
+                        and which are offloaded to the edge.
+                    </li>
+
+                    <li>
+                        Typical edge functions may include multi-robot
+                        coordination, perception, map fusion,
+                        task allocation, and LLM inference.
+                    </li>
+                </ul>
+
+            </div>
 
 
-                    <div class="architecture-image-wrapper">
+            <div class="architecture-card">
 
-                        <img
-                            src="images/architecture.png"
-                            alt="Technical architecture of the KTH EdgeAI Cooperative Robotics Challenge"
-                            class="architecture-image"
-                        >
+                <h3>
+                    3. Human operator + LLM
+                </h3>
 
-                    </div>
+                <ul>
+                    <li>
+                        The human operator provides natural-language
+                        mission updates.
+                    </li>
 
-                </section>
+                    <li>
+                        The LLM interprets the instructions and converts
+                        them into executable tasks for the robot team.
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT: architecture image -->
+        <div class="architecture-image-wrapper">
+
+            <img
+                src="images/architecture.png"
+                alt="Technical architecture of the KTH EdgeAI Cooperative Robotics Challenge"
+                class="architecture-image"
+            >
+
+        </div>
+
+    </div>
+
+</section>
 
 
             </div>

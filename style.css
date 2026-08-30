@@ -1029,21 +1029,24 @@ footer {
     }
 
     .hero {
-        padding-top: 55px;
+        min-height: auto;
+        padding: 90px 0 70px;
+
+        background-image:
+            linear-gradient(
+                rgba(255, 255, 255, 0.90),
+                rgba(255, 255, 255, 0.90)
+            ),
+            url("images/hero.png");
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
-    .hero-grid,
     .challenge-grid,
     .apply-grid {
         grid-template-columns: 1fr;
-    }
-
-    .hero-image {
-        order: -1;
-    }
-
-    .hero-image img {
-        min-height: 300px;
     }
 
     .architecture-grid {
@@ -1065,7 +1068,6 @@ footer {
 
     .timeline {
         grid-template-columns: 1fr;
-
         gap: 35px;
     }
 

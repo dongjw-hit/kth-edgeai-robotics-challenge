@@ -215,124 +215,47 @@
 <!-- Architecture -->
 <!-- ===================================================== -->
 
-<section class="section section-light" id="architecture">
+<div class="architecture-layout">
 
-    <div class="container">
+    <div class="architecture-image">
+        <img
+            src="images/architecture.png"
+            alt="Technical architecture of the cooperative robotics system">
+    </div>
 
-        <div class="section-heading">
+    <div class="architecture-side">
 
-            <span class="section-number">02</span>
-
-            <div>
-                <p class="section-label">TECHNICAL ARCHITECTURE</p>
-
-                <h2>
-                    Robots, edge computing, and human interaction
-                </h2>
-            </div>
-
+        <div class="architecture-card">
+            <div class="architecture-number">1</div>
+            <h3>Mobile Robot Team</h3>
+            <p>
+                Robots perform sensing, local computation,
+                motion control, and exploration.
+            </p>
         </div>
 
-
-        <p class="section-intro">
-            Teams decide how sensing, computation, communication, and
-            decision-making are distributed across the robotic system.
-        </p>
-
-
-        <div class="architecture-grid">
-
-            <div class="architecture-card">
-
-                <div class="architecture-number">
-                    1
-                </div>
-
-                <h3>
-                    Mobile Robot Team
-                </h3>
-
-                <p>
-                    Robots perform sensing, local computation,
-                    motion control, and exploration.
-                </p>
-
-                <ul>
-                    <li>Onboard sensing</li>
-                    <li>Local computation</li>
-                    <li>Motion and control</li>
-                    <li>Robot-to-robot communication</li>
-                </ul>
-
-            </div>
-
-
-            <div class="architecture-card featured">
-
-                <div class="architecture-number">
-                    2
-                </div>
-
-                <h3>
-                    Edge Computing Node
-                </h3>
-
-                <p>
-                    Each team has one local GPU-enabled edge computing node.
-                </p>
-
-                <ul>
-                    <li>Compute offloading</li>
-                    <li>Multi-robot coordination</li>
-                    <li>Map / data fusion</li>
-                    <li>Perception and planning</li>
-                    <li>LLM inference</li>
-                </ul>
-
-            </div>
-
-
-            <div class="architecture-card">
-
-                <div class="architecture-number">
-                    3
-                </div>
-
-                <h3>
-                    Human Operator + LLM
-                </h3>
-
-                <p>
-                    Natural-language mission updates are interpreted
-                    and translated into executable robot tasks.
-                </p>
-
-                <ul>
-                    <li>Mission updates</li>
-                    <li>Instruction interpretation</li>
-                    <li>Task generation</li>
-                    <li>Human-in-the-loop interaction</li>
-                </ul>
-
-            </div>
-
+        <div class="architecture-card featured">
+            <div class="architecture-number">2</div>
+            <h3>Edge Computing Node</h3>
+            <p>
+                One local GPU-enabled edge node supports
+                coordination, map fusion, perception, planning,
+                and LLM inference.
+            </p>
         </div>
 
-
-        <div class="architecture-message">
-
-            <strong>The key design question:</strong>
-
-            How should computation be distributed between the robots and
-            the edge node while balancing mission performance and energy consumption?
-
+        <div class="architecture-card">
+            <div class="architecture-number">3</div>
+            <h3>Human Operator + LLM</h3>
+            <p>
+                Natural-language mission updates are interpreted
+                and translated into executable robot tasks.
+            </p>
         </div>
 
     </div>
 
-</section>
-
-
+</div>
 
 <!-- ===================================================== -->
 <!-- Participation -->

@@ -1605,3 +1605,332 @@ a {
     }
 
 }
+
+/* =========================================================
+   Resources Page
+========================================================= */
+
+.resources-hero {
+    padding:
+        95px 40px 75px;
+
+    background: #f4f7fb;
+
+    border-bottom:
+        1px solid #dce3e9;
+}
+
+
+.resources-container {
+    max-width: 1280px;
+
+    margin: 0 auto;
+}
+
+
+.resources-hero h1 {
+    color: #17202a;
+
+    font-size:
+        clamp(48px, 5vw, 72px);
+
+    line-height: 1;
+
+    font-weight: 700;
+
+    letter-spacing: -2.5px;
+}
+
+
+.resources-lead {
+    max-width: 760px;
+
+    margin-top: 26px;
+
+    color: #53606b;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+
+
+/* =========================================================
+   Resources content
+========================================================= */
+
+.resources-content {
+    padding:
+        75px 40px 110px;
+}
+
+
+.resource-section {
+    padding:
+        55px 0;
+
+    border-bottom:
+        1px solid #dfe4e8;
+}
+
+
+.resource-section:first-child {
+    padding-top: 0;
+}
+
+
+.resource-section:last-child {
+    border-bottom: none;
+}
+
+
+
+/* Section heading */
+
+.resource-section-heading {
+    display: grid;
+
+    grid-template-columns:
+        55px minmax(0, 1fr);
+
+    gap: 20px;
+
+    margin-bottom: 30px;
+}
+
+
+.resource-number {
+    padding-top: 5px;
+
+    color: #8a96a1;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+}
+
+
+.resource-section-heading h2 {
+    color: #17202a;
+
+    font-size: 29px;
+
+    font-weight: 700;
+
+    line-height: 1.2;
+
+    letter-spacing: -0.5px;
+}
+
+
+.resource-section-heading div > p {
+    max-width: 690px;
+
+    margin-top: 8px;
+
+    color: #68737d;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+}
+
+
+
+/* =========================================================
+   Resource cards
+========================================================= */
+
+.resource-grid {
+    margin-left: 75px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 18px;
+}
+
+
+.resource-card {
+    min-height: 205px;
+
+    padding:
+        23px 24px;
+
+    background: #f8fafc;
+
+    border:
+        1px solid #d4dee8;
+
+    border-radius: 11px;
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.resource-card:hover {
+    transform:
+        translateY(-2px);
+
+    border-color: #b7c7d8;
+
+    box-shadow:
+        0 8px 22px rgba(22, 32, 42, 0.06);
+}
+
+
+.resource-card-top {
+    margin-bottom: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+}
+
+
+.resource-type {
+    color: #456b9b;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.4px;
+}
+
+
+.resource-status {
+    padding:
+        4px 8px;
+
+    background: #edf1f4;
+
+    color: #7a858e;
+
+    border-radius: 20px;
+
+    font-size: 10px;
+
+    font-weight: 700;
+}
+
+
+.resource-card h3 {
+    margin-bottom: 11px;
+
+    color: #17202a;
+
+    font-size: 19px;
+
+    font-weight: 700;
+
+    line-height: 1.3;
+}
+
+
+.resource-card > p {
+    color: #65717b;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+
+/* =========================================================
+   Downloadable resources
+========================================================= */
+
+.resource-card.resource-available {
+    cursor: pointer;
+
+    background: #ffffff;
+}
+
+
+.resource-card.resource-available .resource-status {
+    background: #e8f5ee;
+
+    color: #28744d;
+}
+
+
+.resource-download {
+    display: inline-block;
+
+    margin-top: 18px;
+
+    color: #245f9e;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+
+.resource-download:hover {
+    text-decoration: underline;
+}
+
+
+
+/* =========================================================
+   Responsive
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .resource-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .resources-hero {
+        padding:
+            70px 24px 55px;
+    }
+
+
+    .resources-content {
+        padding:
+            55px 24px 80px;
+    }
+
+
+    .resource-section-heading {
+        grid-template-columns: 1fr;
+
+        gap: 5px;
+    }
+
+
+    .resource-number {
+        padding-top: 0;
+    }
+
+
+    .resource-grid {
+        margin-left: 0;
+
+        grid-template-columns: 1fr;
+    }
+
+}

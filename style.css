@@ -132,7 +132,12 @@ nav a:hover {
 }
 
 .hero-content {
-    width: 100%;
+    width: min(1180px, 90%);
+    margin: 0 auto;
+}
+
+.hero-text {
+    max-width: 620px;
 }
 
 .hero-text {

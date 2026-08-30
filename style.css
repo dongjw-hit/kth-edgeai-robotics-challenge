@@ -131,13 +131,9 @@ nav a:hover {
     background-repeat: no-repeat;
 }
 
-.hero-content {
+.container {
     width: min(1180px, 90%);
     margin: 0 auto;
-}
-
-.hero-text {
-    max-width: 620px;
 }
 
 .hero-text {

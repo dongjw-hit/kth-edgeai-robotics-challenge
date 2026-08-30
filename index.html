@@ -1,28 +1,958 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KTH EdgeAI Cooperative Robotics Challenge</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KTH EdgeAI Cooperative Robotics Challenge</title>
+
+    <meta name="description"
+        content="KTH EdgeAI Cooperative Robotics Challenge – a student hackathon on cooperative robotics, edge AI, communication, control, and human–robot interaction.">
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 
 <body>
 
-  <h1>KTH EdgeAI Cooperative Robotics Challenge</h1>
+<!-- ===================================================== -->
+<!-- Navigation -->
+<!-- ===================================================== -->
 
-  <p>
-    A student hackathon on cooperative mobile robotics,
-    edge computing, AI, communication, and control.
-  </p>
+<header class="navbar">
 
-  <h2>The Challenge</h2>
+    <div class="container nav-container">
 
-  <p>
-    Develop a team of mobile robots to explore an unknown environment,
-    locate targets, and perform search-and-rescue-style missions under
-    realistic edge-computing and energy constraints.
-  </p>
+        <a class="logo" href="#home">
+            KTH EdgeAI
+        </a>
+
+        <nav>
+            <a href="#challenge">Challenge</a>
+            <a href="#architecture">Architecture</a>
+            <a href="#participation">Participation</a>
+            <a href="#timeline">Timeline</a>
+            <a href="#faq">FAQ</a>
+
+            <a class="nav-button" href="#apply">
+                Apply
+            </a>
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<!-- ===================================================== -->
+<!-- Hero -->
+<!-- ===================================================== -->
+
+<section class="hero" id="home">
+
+    <div class="container hero-grid">
+
+        <div class="hero-text">
+
+            <div class="eyebrow">
+                KTH EdgeAI
+            </div>
+
+            <h1>
+                Cooperative Robotics
+                <span>Challenge</span>
+            </h1>
+
+            <h2>
+                Build. Coordinate. Explore.
+            </h2>
+
+            <p class="hero-description">
+                A hands-on hackathon where students develop a cooperative
+                mobile robot system to perform a search-and-rescue-style
+                mission under realistic edge-computing and energy constraints.
+            </p>
+
+            <div class="theme-tags">
+
+                <span>Robotics</span>
+                <span>Edge AI</span>
+                <span>Communication</span>
+                <span>Control</span>
+                <span>LLMs</span>
+
+            </div>
+
+            <div class="hero-buttons">
+
+                <a class="primary-button" href="#apply">
+                    Apply Now
+                </a>
+
+                <a class="secondary-button" href="#challenge">
+                    Explore the Challenge
+                </a>
+
+            </div>
+
+            <div class="hero-meta">
+
+                <div>
+                    <strong>2 months</strong>
+                    <span>Preparation</span>
+                </div>
+
+                <div>
+                    <strong>1 day</strong>
+                    <span>Final competition</span>
+                </div>
+
+                <div>
+                    <strong>Mid-Dec</strong>
+                    <span>2026</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-image">
+
+            <!--
+            Replace hero.jpg with your own image file.
+            Example:
+            images/hero.jpg
+            -->
+
+            <img
+                src="images/hero.jpg"
+                alt="Mobile robots performing a cooperative search-and-rescue mission">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ===================================================== -->
+<!-- Challenge -->
+<!-- ===================================================== -->
+
+<section class="section" id="challenge">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-number">01</span>
+
+            <div>
+                <p class="section-label">THE CHALLENGE</p>
+
+                <h2>
+                    Cooperative robots in an unknown environment
+                </h2>
+            </div>
+
+        </div>
+
+
+        <div class="challenge-grid">
+
+            <div class="challenge-image">
+
+                <!--
+                Upload your arena image as:
+                images/arena.png
+                -->
+
+                <img
+                    src="images/arena.png"
+                    alt="Search-and-rescue mission arena">
+
+            </div>
+
+
+            <div class="challenge-content">
+
+                <p class="lead">
+                    Each team controls a group of four wheeled mobile robots
+                    operating in an unknown indoor arena.
+                </p>
+
+                <div class="task-list">
+
+                    <div class="task-item">
+                        <div class="task-icon">01</div>
+                        <div>
+                            <h3>Explore</h3>
+                            <p>Explore an initially unknown environment.</p>
+                        </div>
+                    </div>
+
+                    <div class="task-item">
+                        <div class="task-icon">02</div>
+                        <div>
+                            <h3>Detect</h3>
+                            <p>Locate and identify targets in the arena.</p>
+                        </div>
+                    </div>
+
+                    <div class="task-item">
+                        <div class="task-icon">03</div>
+                        <div>
+                            <h3>Coordinate</h3>
+                            <p>
+                                Share information and allocate tasks among robots.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="task-item">
+                        <div class="task-icon">04</div>
+                        <div>
+                            <h3>Rescue</h3>
+                            <p>
+                                Form robot groups to complete cooperative rescue tasks.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="task-item">
+                        <div class="task-icon">05</div>
+                        <div>
+                            <h3>Adapt</h3>
+                            <p>
+                                Respond to dynamic natural-language mission updates.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="arena-note">
+
+                    <strong>Mission arena</strong>
+
+                    <span>
+                        Approximately 15 × 10 m indoor exploration area
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ===================================================== -->
+<!-- Architecture -->
+<!-- ===================================================== -->
+
+<section class="section section-light" id="architecture">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-number">02</span>
+
+            <div>
+                <p class="section-label">TECHNICAL ARCHITECTURE</p>
+
+                <h2>
+                    Robots, edge computing, and human interaction
+                </h2>
+            </div>
+
+        </div>
+
+
+        <p class="section-intro">
+            Teams decide how sensing, computation, communication, and
+            decision-making are distributed across the robotic system.
+        </p>
+
+
+        <div class="architecture-grid">
+
+            <div class="architecture-card">
+
+                <div class="architecture-number">
+                    1
+                </div>
+
+                <h3>
+                    Mobile Robot Team
+                </h3>
+
+                <p>
+                    Robots perform sensing, local computation,
+                    motion control, and exploration.
+                </p>
+
+                <ul>
+                    <li>Onboard sensing</li>
+                    <li>Local computation</li>
+                    <li>Motion and control</li>
+                    <li>Robot-to-robot communication</li>
+                </ul>
+
+            </div>
+
+
+            <div class="architecture-card featured">
+
+                <div class="architecture-number">
+                    2
+                </div>
+
+                <h3>
+                    Edge Computing Node
+                </h3>
+
+                <p>
+                    Each team has one local GPU-enabled edge computing node.
+                </p>
+
+                <ul>
+                    <li>Compute offloading</li>
+                    <li>Multi-robot coordination</li>
+                    <li>Map / data fusion</li>
+                    <li>Perception and planning</li>
+                    <li>LLM inference</li>
+                </ul>
+
+            </div>
+
+
+            <div class="architecture-card">
+
+                <div class="architecture-number">
+                    3
+                </div>
+
+                <h3>
+                    Human Operator + LLM
+                </h3>
+
+                <p>
+                    Natural-language mission updates are interpreted
+                    and translated into executable robot tasks.
+                </p>
+
+                <ul>
+                    <li>Mission updates</li>
+                    <li>Instruction interpretation</li>
+                    <li>Task generation</li>
+                    <li>Human-in-the-loop interaction</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <div class="architecture-message">
+
+            <strong>The key design question:</strong>
+
+            How should computation be distributed between the robots and
+            the edge node while balancing mission performance and energy consumption?
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ===================================================== -->
+<!-- Participation -->
+<!-- ===================================================== -->
+
+<section class="section" id="participation">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-number">03</span>
+
+            <div>
+
+                <p class="section-label">
+                    TEAM & RESOURCES
+                </p>
+
+                <h2>
+                    Build an interdisciplinary team
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="stats-grid">
+
+            <div class="stat-card">
+                <span class="stat-number">4–5</span>
+                <span class="stat-label">Students / team</span>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-number">3</span>
+                <span class="stat-label">Competing teams</span>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-number">4</span>
+                <span class="stat-label">Robots / team</span>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-number">1</span>
+                <span class="stat-label">GPU edge node / team</span>
+            </div>
+
+        </div>
+
+
+        <div class="participation-grid">
+
+            <div class="info-card">
+
+                <h3>
+                    Who can participate?
+                </h3>
+
+                <p>
+                    Master’s students can apply either individually
+                    or as a team.
+                </p>
+
+                <p>
+                    Individual applicants may be matched with other
+                    participants to form interdisciplinary teams.
+                </p>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <h3>
+                    Team composition
+                </h3>
+
+                <p>
+                    Each team should cover at least three of the
+                    following technical areas:
+                </p>
+
+                <div class="expertise-tags">
+
+                    <span>Robotics</span>
+                    <span>CS / AI</span>
+                    <span>Communication</span>
+                    <span>Control</span>
+                    <span>Autonomous Systems</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <h3>
+                    Mentorship
+                </h3>
+
+                <p>
+                    Each team may invite one PhD student or
+                    postdoctoral researcher to serve as a mentor
+                    during the preparation period.
+                </p>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <h3>
+                    Resources
+                </h3>
+
+                <ul>
+                    <li>4 four-wheeled mobile robots</li>
+                    <li>Gazebo-based simulation environment</li>
+                    <li>GPU-enabled edge computing node</li>
+                    <li>Competition arena</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ===================================================== -->
+<!-- Evaluation -->
+<!-- ===================================================== -->
+
+<section class="section section-dark" id="evaluation">
+
+    <div class="container">
+
+        <div class="section-heading dark-heading">
+
+            <span class="section-number">
+                04
+            </span>
+
+            <div>
+
+                <p class="section-label">
+                    EVALUATION
+                </p>
+
+                <h2>
+                    Mission success meets energy efficiency
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <p class="section-intro dark-intro">
+
+            Each team will perform three mission runs.
+            The final score will be based on average performance across runs.
+
+        </p>
+
+
+        <div class="evaluation-grid">
+
+            <div class="evaluation-card">
+
+                <span class="evaluation-tag">
+                    Mission Performance
+                </span>
+
+                <h3>
+                    Complete the mission
+                </h3>
+
+                <ul>
+                    <li>Targets detected</li>
+                    <li>Rescue tasks completed</li>
+                    <li>Completion time</li>
+                    <li>Response to mission updates</li>
+                </ul>
+
+            </div>
+
+
+            <div class="evaluation-card">
+
+                <span class="evaluation-tag green">
+                    Energy Efficiency
+                </span>
+
+                <h3>
+                    Use resources wisely
+                </h3>
+
+                <ul>
+                    <li>Battery discharge</li>
+                    <li>Compute usage</li>
+                    <li>Communication usage</li>
+                    <li>Energy-aware system design</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <div class="score-message">
+
+            Final score =
+            <strong>
+                mission success balanced by energy / resource efficiency
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ===================================================== -->
+<!-- Timeline -->
+<!-- ===================================================== -->
+
+<section class="section" id="timeline">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-number">
+                05
+            </span>
+
+            <div>
+
+                <p class="section-label">
+                    TIMELINE
+                </p>
+
+                <h2>
+                    From recruitment to competition
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot">
+                    1
+                </div>
+
+                <span class="timeline-date">
+                    September
+                </span>
+
+                <h3>
+                    Recruitment
+                </h3>
+
+                <p>
+                    Applications and team formation
+                </p>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot">
+                    2
+                </div>
+
+                <span class="timeline-date">
+                    Early October
+                </span>
+
+                <h3>
+                    Kick-off
+                </h3>
+
+                <p>
+                    Teams, rules, resources, and technical setup
+                </p>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot">
+                    3
+                </div>
+
+                <span class="timeline-date">
+                    October – November
+                </span>
+
+                <h3>
+                    Team Preparation
+                </h3>
+
+                <p>
+                    Development, simulation, and testing
+                </p>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot">
+                    4
+                </div>
+
+                <span class="timeline-date">
+                    Mid-December
+                </span>
+
+                <h3>
+                    Competition
+                </h3>
+
+                <p>
+                    One-day final event
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ===================================================== -->
+<!-- FAQ -->
+<!-- ===================================================== -->
+
+<section class="section section-light" id="faq">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-number">
+                06
+            </span>
+
+            <div>
+
+                <p class="section-label">
+                    FAQ
+                </p>
+
+                <h2>
+                    Frequently asked questions
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="faq-list">
+
+
+            <details>
+
+                <summary>
+                    Can I apply individually?
+                </summary>
+
+                <p>
+                    Yes. Students may apply individually or as a team.
+                    Individual applicants may be matched with other participants.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    Do I need to have a complete team before applying?
+                </summary>
+
+                <p>
+                    No. Complete teams are welcome, but individual applications
+                    are also accepted.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    Can our team have a mentor?
+                </summary>
+
+                <p>
+                    Yes. Each team may invite one PhD student or postdoctoral
+                    researcher to serve as a mentor.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    What resources will be provided?
+                </summary>
+
+                <p>
+                    Each team will have access to mobile robots,
+                    a Gazebo-based simulation environment,
+                    and a GPU-enabled edge computing node.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    Can we use external cloud or API resources?
+                </summary>
+
+                <p>
+                    No external cloud or API access will be available
+                    during official competition runs.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    How will the competition be scored?
+                </summary>
+
+                <p>
+                    Evaluation will balance mission performance and
+                    energy/resource efficiency. Detailed scoring rules
+                    will be announced before the kick-off.
+                </p>
+
+            </details>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ===================================================== -->
+<!-- Apply -->
+<!-- ===================================================== -->
+
+<section class="apply-section" id="apply">
+
+    <div class="container apply-grid">
+
+        <div>
+
+            <p class="section-label apply-label">
+                READY TO TAKE ON THE CHALLENGE?
+            </p>
+
+            <h2>
+                Form your team and join the KTH EdgeAI Robotics Challenge.
+            </h2>
+
+            <p>
+                Applications will open in September 2026.
+                Students may apply individually or as a team.
+            </p>
+
+        </div>
+
+
+        <div class="apply-card">
+
+            <span class="apply-small">
+                APPLICATION DEADLINE
+            </span>
+
+            <strong>
+                XX September 2026
+            </strong>
+
+            <!--
+            Replace # with the actual registration form URL.
+            -->
+
+            <a
+                class="apply-button"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                Apply Now
+
+            </a>
+
+
+            <span class="apply-contact">
+                Questions?<br>
+                Contact: edgeai.challenge@kth.se
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ===================================================== -->
+<!-- Footer -->
+<!-- ===================================================== -->
+
+<footer>
+
+    <div class="container footer-content">
+
+        <div>
+
+            <strong>
+                KTH EdgeAI Cooperative Robotics Challenge
+            </strong>
+
+            <p>
+                AI + Robotics + Edge Computing + Communication + Control
+            </p>
+
+        </div>
+
+        <div>
+
+            © 2026 KTH EdgeAI Cooperative Robotics Challenge
+
+        </div>
+
+    </div>
+
+</footer>
+
 
 </body>
+
 </html>

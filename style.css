@@ -700,3 +700,58 @@ a {
     }
 
 }
+
+/* =========================================================
+   Challenge
+========================================================= */
+
+.about-section {
+    width: 100%;
+}
+
+.challenge-two-column {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.challenge-text {
+    max-width: 520px;
+}
+
+.challenge-intro {
+    margin-top: 20px;
+    color: #39444e;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.challenge-image-block {
+    width: 100%;
+}
+
+.challenge-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-caption {
+    margin-top: 12px;
+    text-align: center;
+    color: #5f6c7b;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+@media (max-width: 950px) {
+    .challenge-two-column {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .challenge-text {
+        max-width: none;
+    }
+}

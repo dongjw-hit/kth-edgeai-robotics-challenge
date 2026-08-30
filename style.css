@@ -443,13 +443,9 @@ nav a:hover {
 
 .architecture-layout {
     display: grid;
-
-    grid-template-columns:
-        1.28fr 0.72fr;
-
-    gap: 40px;
-
-    align-items: center;
+    grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.65fr);
+    gap: 36px;
+    align-items: stretch;
 }
 
 
@@ -457,10 +453,12 @@ nav a:hover {
 /* Architecture figure */
 
 .architecture-figure {
-    padding: 16px;
+    display: flex;
+    align-items: center;
+
+    padding: 12px;
 
     border: 1px solid #dfe7f1;
-
     border-radius: 18px;
 
     background: white;
@@ -468,8 +466,7 @@ nav a:hover {
 
 .architecture-figure img {
     width: 100%;
-
-    display: block;
+    height: auto;
 
     object-fit: contain;
 
@@ -1083,18 +1080,6 @@ footer {
     }
 
 
-    /* Architecture */
-
-    .architecture-layout {
-        grid-template-columns: 1fr;
-    }
-
-    .architecture-components {
-        display: grid;
-
-        grid-template-columns: 1fr;
-    }
-
 
     /* Participation */
 
@@ -1271,6 +1256,21 @@ footer {
         flex-direction: column;
 
         align-items: flex-start;
+    }
+
+}
+
+/* Architecture switches to one column only on small screens */
+
+@media (max-width: 650px) {
+
+    .architecture-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .architecture-components {
+        display: flex;
+        flex-direction: column;
     }
 
 }
